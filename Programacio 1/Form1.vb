@@ -40,5 +40,32 @@
         If optPorcentaje.Checked Then
             lblRespuesta.Text = Num1 * (Num2 / 100)
         End If
+
+        Select Case cbpOperaciones.SelectedIndex
+            Case 1
+                lblRespuesta.Text = Num1 + Num2
+
+            Case 2
+                lblRespuesta.Text = Num1 - Num2
+
+            Case 3
+                lblRespuesta.Text = Num1 * Num2
+
+            Case 4
+                lblRespuesta.Text = Num1 / Num2
+
+            Case 5
+                lblRespuesta.Text = Num1 ^ Num2
+
+            Case 6
+                lblRespuesta.Text = Num1 Mod Num2
+
+            Case 7
+                lblRespuesta.Text = Num1 * (Num2 / 100)
+        End Select
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbpOperaciones.SelectedIndexChanged
+
     End Sub
 End Class

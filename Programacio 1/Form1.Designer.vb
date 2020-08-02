@@ -35,6 +35,7 @@ Partial Class Form1
         Me.optMultiplicacion = New System.Windows.Forms.RadioButton()
         Me.optResiduo = New System.Windows.Forms.RadioButton()
         Me.optPorcentaje = New System.Windows.Forms.RadioButton()
+        Me.cbpOperaciones = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblNum1
@@ -73,7 +74,7 @@ Partial Class Form1
         '
         Me.lblRespuesta.AutoSize = True
         Me.lblRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRespuesta.Location = New System.Drawing.Point(58, 231)
+        Me.lblRespuesta.Location = New System.Drawing.Point(49, 265)
         Me.lblRespuesta.Name = "lblRespuesta"
         Me.lblRespuesta.Size = New System.Drawing.Size(116, 20)
         Me.lblRespuesta.TabIndex = 4
@@ -81,7 +82,7 @@ Partial Class Form1
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(79, 194)
+        Me.btnCalcular.Location = New System.Drawing.Point(70, 228)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
         Me.btnCalcular.TabIndex = 5
@@ -160,11 +161,22 @@ Partial Class Form1
         Me.optPorcentaje.Text = "%"
         Me.optPorcentaje.UseVisualStyleBackColor = True
         '
+        'cbpOperaciones
+        '
+        Me.cbpOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbpOperaciones.FormattingEnabled = True
+        Me.cbpOperaciones.Items.AddRange(New Object() {" ", "Suma", "Resta", "Multiplicacion", "Division", "Potenciacion", "Residuo", "Porcentaje"})
+        Me.cbpOperaciones.Location = New System.Drawing.Point(53, 194)
+        Me.cbpOperaciones.Name = "cbpOperaciones"
+        Me.cbpOperaciones.Size = New System.Drawing.Size(121, 21)
+        Me.cbpOperaciones.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(223, 285)
+        Me.ClientSize = New System.Drawing.Size(223, 295)
+        Me.Controls.Add(Me.cbpOperaciones)
         Me.Controls.Add(Me.optPorcentaje)
         Me.Controls.Add(Me.optResiduo)
         Me.Controls.Add(Me.optMultiplicacion)
@@ -200,4 +212,5 @@ Partial Class Form1
     Friend WithEvents optMultiplicacion As RadioButton
     Friend WithEvents optResiduo As RadioButton
     Friend WithEvents optPorcentaje As RadioButton
+    Friend WithEvents cbpOperaciones As ComboBox
 End Class
