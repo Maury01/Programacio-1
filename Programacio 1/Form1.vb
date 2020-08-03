@@ -60,4 +60,16 @@
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbpOperaciones.SelectedIndexChanged
 
     End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btnCalcular_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
