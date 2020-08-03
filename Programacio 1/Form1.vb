@@ -1,44 +1,25 @@
 ﻿Public Class Form1
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblNum1.Click
+
+    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles lblNTabla.Click
 
     End Sub
 
-    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles optPotencia.CheckedChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtNTabla.TextChanged
 
     End Sub
 
-    Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
-        Dim Num1 As Double
-        Dim Num2 As Double
-        Num1 = TxtNum1.Text
-        Num2 = TxtNum2.Text
+    Private Sub btnGenerar_Click(sender As Object, e As EventArgs) Handles btnGenerar.Click
+        Dim NTabla, i As SByte
+        NTabla = txtNTabla.Text
 
-        If optSuma.Checked Then
-            lblRespuesta.Text = Num1 + Num2
-        End If
+        lstTabla.Items.Clear()
 
-        If optResta.Checked Then
-            lblRespuesta.Text = Num1 - Num2
-        End If
-
-        If optMultiplicacion.Checked Then
-            lblRespuesta.Text = Num1 * Num2
-        End If
-
-        If optDivision.Checked Then
-            lblRespuesta.Text = Num1 / Num2
-        End If
-
-        If optPotencia.Checked Then
-            lblRespuesta.Text = Num1 ^ Num2
-        End If
-
-        If optResiduo.Checked Then
-            lblRespuesta.Text = Num1 Mod Num2
-        End If
-
-        If optPorcentaje.Checked Then
-            lblRespuesta.Text = Num1 * (Num2 / 100)
+        If NTabla <= 12 Then
+            For i = 1 To 10
+                lstTabla.Items.Add(NTabla.ToString() + " X " + i.ToString() + " = " + (NTabla * i).ToString())
+            Next
+        Else
+            lstTabla.Items.Add("El limite es 12.")
         End If
     End Sub
 End Class
