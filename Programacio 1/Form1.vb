@@ -9,17 +9,15 @@
     End Sub
 
     Private Sub btnGenerar_Click(sender As Object, e As EventArgs) Handles btnGenerar.Click
-        Dim NTabla, i As SByte
+        Dim NTabla, i As Int64
         NTabla = txtNTabla.Text
 
         lstTabla.Items.Clear()
 
-        If NTabla <= 12 Then
-            For i = 1 To 10
-                lstTabla.Items.Add(NTabla.ToString() + " X " + i.ToString() + " = " + (NTabla * i).ToString())
-            Next
-        Else
-            lstTabla.Items.Add("El limite es 12.")
-        End If
+        Do While i <= 10
+            lstTabla.Items.Add(NTabla.ToString() + " X " + i.ToString() + " = " + (NTabla * i).ToString())
+            i = i + 1
+        Loop
+
     End Sub
 End Class
