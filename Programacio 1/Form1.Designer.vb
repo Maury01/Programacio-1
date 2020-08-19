@@ -25,7 +25,7 @@ Partial Class Form1
         Me.lblMoneda = New System.Windows.Forms.Label()
         Me.cboMoneda1 = New System.Windows.Forms.ComboBox()
         Me.txtCantMoneda = New System.Windows.Forms.TextBox()
-        Me.textResultadoMoneda = New System.Windows.Forms.TextBox()
+        Me.txtResultadoMoneda = New System.Windows.Forms.TextBox()
         Me.cboMoneda2 = New System.Windows.Forms.ComboBox()
         Me.btnConvertirMoneda = New System.Windows.Forms.Button()
         Me.btnConvertirVolumen = New System.Windows.Forms.Button()
@@ -86,17 +86,18 @@ Partial Class Form1
         Me.txtCantMoneda.Size = New System.Drawing.Size(100, 20)
         Me.txtCantMoneda.TabIndex = 2
         '
-        'textResultadoMoneda
+        'txtResultadoMoneda
         '
-        Me.textResultadoMoneda.Location = New System.Drawing.Point(228, 42)
-        Me.textResultadoMoneda.Name = "textResultadoMoneda"
-        Me.textResultadoMoneda.Size = New System.Drawing.Size(100, 20)
-        Me.textResultadoMoneda.TabIndex = 3
+        Me.txtResultadoMoneda.Enabled = False
+        Me.txtResultadoMoneda.Location = New System.Drawing.Point(228, 42)
+        Me.txtResultadoMoneda.Name = "txtResultadoMoneda"
+        Me.txtResultadoMoneda.Size = New System.Drawing.Size(100, 20)
+        Me.txtResultadoMoneda.TabIndex = 3
         '
         'cboMoneda2
         '
         Me.cboMoneda2.FormattingEnabled = True
-        Me.cboMoneda2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboMoneda2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Sol Peruano", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboMoneda2.Location = New System.Drawing.Point(228, 68)
         Me.cboMoneda2.Name = "cboMoneda2"
         Me.cboMoneda2.Size = New System.Drawing.Size(100, 21)
@@ -131,6 +132,7 @@ Partial Class Form1
         '
         'txtResultadoVolumen
         '
+        Me.txtResultadoVolumen.Enabled = False
         Me.txtResultadoVolumen.Location = New System.Drawing.Point(228, 147)
         Me.txtResultadoVolumen.Name = "txtResultadoVolumen"
         Me.txtResultadoVolumen.Size = New System.Drawing.Size(100, 20)
@@ -182,6 +184,7 @@ Partial Class Form1
         '
         'txtResultadoAlmacenamiento
         '
+        Me.txtResultadoAlmacenamiento.Enabled = False
         Me.txtResultadoAlmacenamiento.Location = New System.Drawing.Point(231, 252)
         Me.txtResultadoAlmacenamiento.Name = "txtResultadoAlmacenamiento"
         Me.txtResultadoAlmacenamiento.Size = New System.Drawing.Size(100, 20)
@@ -233,6 +236,7 @@ Partial Class Form1
         '
         'txtResultadoMasa
         '
+        Me.txtResultadoMasa.Enabled = False
         Me.txtResultadoMasa.Location = New System.Drawing.Point(562, 42)
         Me.txtResultadoMasa.Name = "txtResultadoMasa"
         Me.txtResultadoMasa.Size = New System.Drawing.Size(100, 20)
@@ -284,6 +288,7 @@ Partial Class Form1
         '
         'txtResultadoLongitud
         '
+        Me.txtResultadoLongitud.Enabled = False
         Me.txtResultadoLongitud.Location = New System.Drawing.Point(562, 147)
         Me.txtResultadoLongitud.Name = "txtResultadoLongitud"
         Me.txtResultadoLongitud.Size = New System.Drawing.Size(100, 20)
@@ -335,6 +340,7 @@ Partial Class Form1
         '
         'txtResultadoTiempo
         '
+        Me.txtResultadoTiempo.Enabled = False
         Me.txtResultadoTiempo.Location = New System.Drawing.Point(562, 252)
         Me.txtResultadoTiempo.Name = "txtResultadoTiempo"
         Me.txtResultadoTiempo.Size = New System.Drawing.Size(100, 20)
@@ -403,7 +409,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblVolumen)
         Me.Controls.Add(Me.btnConvertirMoneda)
         Me.Controls.Add(Me.cboMoneda2)
-        Me.Controls.Add(Me.textResultadoMoneda)
+        Me.Controls.Add(Me.txtResultadoMoneda)
         Me.Controls.Add(Me.txtCantMoneda)
         Me.Controls.Add(Me.cboMoneda1)
         Me.Controls.Add(Me.lblMoneda)
@@ -419,7 +425,7 @@ Partial Class Form1
     Friend WithEvents lblMoneda As Label
     Friend WithEvents cboMoneda1 As ComboBox
     Friend WithEvents txtCantMoneda As TextBox
-    Friend WithEvents textResultadoMoneda As TextBox
+    Friend WithEvents txtResultadoMoneda As TextBox
     Friend WithEvents cboMoneda2 As ComboBox
     Friend WithEvents btnConvertirMoneda As Button
     Friend WithEvents btnConvertirVolumen As Button
