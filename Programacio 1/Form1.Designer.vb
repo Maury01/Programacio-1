@@ -74,12 +74,14 @@ Partial Class Form1
         '
         'cboMoneda1
         '
+        Me.cboMoneda1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMoneda1.FormattingEnabled = True
         Me.cboMoneda1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboMoneda1.Location = New System.Drawing.Point(29, 68)
         Me.cboMoneda1.Name = "cboMoneda1"
         Me.cboMoneda1.Size = New System.Drawing.Size(100, 21)
         Me.cboMoneda1.TabIndex = 1
+        Me.cboMoneda1.UseWaitCursor = True
         '
         'txtCantMoneda
         '
@@ -97,6 +99,7 @@ Partial Class Form1
         '
         'cboMoneda2
         '
+        Me.cboMoneda2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMoneda2.FormattingEnabled = True
         Me.cboMoneda2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboMoneda2.Location = New System.Drawing.Point(228, 68)
@@ -124,6 +127,7 @@ Partial Class Form1
         '
         'cboVolumen2
         '
+        Me.cboVolumen2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboVolumen2.FormattingEnabled = True
         Me.cboVolumen2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboVolumen2.Location = New System.Drawing.Point(228, 173)
@@ -147,6 +151,7 @@ Partial Class Form1
         '
         'cboVolumen1
         '
+        Me.cboVolumen1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboVolumen1.FormattingEnabled = True
         Me.cboVolumen1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboVolumen1.Location = New System.Drawing.Point(29, 173)
@@ -175,6 +180,7 @@ Partial Class Form1
         '
         'cboAlmacenamiento2
         '
+        Me.cboAlmacenamiento2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboAlmacenamiento2.FormattingEnabled = True
         Me.cboAlmacenamiento2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboAlmacenamiento2.Location = New System.Drawing.Point(231, 278)
@@ -198,6 +204,7 @@ Partial Class Form1
         '
         'cboAlmacenamiento1
         '
+        Me.cboAlmacenamiento1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboAlmacenamiento1.FormattingEnabled = True
         Me.cboAlmacenamiento1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboAlmacenamiento1.Location = New System.Drawing.Point(32, 278)
@@ -226,6 +233,7 @@ Partial Class Form1
         '
         'cboMasa2
         '
+        Me.cboMasa2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa2.FormattingEnabled = True
         Me.cboMasa2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboMasa2.Location = New System.Drawing.Point(562, 68)
@@ -249,6 +257,7 @@ Partial Class Form1
         '
         'cboMasa1
         '
+        Me.cboMasa1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa1.FormattingEnabled = True
         Me.cboMasa1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboMasa1.Location = New System.Drawing.Point(363, 68)
@@ -277,6 +286,7 @@ Partial Class Form1
         '
         'cboLongitud2
         '
+        Me.cboLongitud2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboLongitud2.FormattingEnabled = True
         Me.cboLongitud2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboLongitud2.Location = New System.Drawing.Point(562, 173)
@@ -300,6 +310,7 @@ Partial Class Form1
         '
         'cboLongitud1
         '
+        Me.cboLongitud1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboLongitud1.FormattingEnabled = True
         Me.cboLongitud1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboLongitud1.Location = New System.Drawing.Point(363, 173)
@@ -328,6 +339,7 @@ Partial Class Form1
         '
         'cboTiempo2
         '
+        Me.cboTiempo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTiempo2.FormattingEnabled = True
         Me.cboTiempo2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboTiempo2.Location = New System.Drawing.Point(562, 278)
@@ -351,6 +363,7 @@ Partial Class Form1
         '
         'cboTiempo1
         '
+        Me.cboTiempo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTiempo1.FormattingEnabled = True
         Me.cboTiempo1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
         Me.cboTiempo1.Location = New System.Drawing.Point(363, 278)
