@@ -379,11 +379,11 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(290, 331)
+        Me.Button1.Location = New System.Drawing.Point(231, 335)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "dsf"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
