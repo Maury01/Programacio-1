@@ -106,6 +106,110 @@
                     Valor = Cant * 8.1961
                     txtResultadoMoneda.Text = Math.Round(Valor, 2)
                 End If
+
+            Case 3 'Yen a
+                'Dolar Estadounidense
+                If cboMoneda2.SelectedIndex = 1 Then
+                    Valor = Cant * 0.00941565
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Euro
+                If cboMoneda2.SelectedIndex = 2 Then
+                    Valor = Cant * 0.00796
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Yen
+                If cboMoneda2.SelectedIndex = 3 Then
+                    Valor = Cant * 1
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Colon de El Salvador
+                If cboMoneda2.SelectedIndex = 4 Then
+                    Valor = Cant * 0.0830478319
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Bitcoin
+                If cboMoneda2.SelectedIndex = 5 Then
+                    Valor = Cant * 0.0000008003
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Sol Peruano
+                If cboMoneda2.SelectedIndex = 6 Then
+                    Valor = Cant * 0.0338534852
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Peso Mexicano
+                If cboMoneda2.SelectedIndex = 7 Then
+                    Valor = Cant * 0.2094891
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Libra Esterlina
+                If cboMoneda2.SelectedIndex = 8 Then
+                    Valor = Cant * 0.0071943966
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Dolar Canadiense
+                If cboMoneda2.SelectedIndex = 9 Then
+                    Valor = Cant * 0.012459
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Yuan
+                If cboMoneda2.SelectedIndex = 10 Then
+                    Valor = Cant * 0.0651749
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Colon de El Salvador a
+                'Dolar Estadounidense
+                If cboMoneda2.SelectedIndex = 1 Then
+                    Valor = Cant * 0.1134721
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Euro
+                If cboMoneda2.SelectedIndex = 2 Then
+                    Valor = Cant * 0.0958459113
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Yen
+                If cboMoneda2.SelectedIndex = 3 Then
+                    Valor = Cant * 12.04160251
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Colon de El Salvador
+                If cboMoneda2.SelectedIndex = 4 Then
+                    Valor = Cant * 1
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Bitcoin
+                If cboMoneda2.SelectedIndex = 5 Then
+                    Valor = Cant * 0.0000096
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Sol Peruano
+                If cboMoneda2.SelectedIndex = 6 Then
+                    Valor = Cant * 0.4078704706
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Peso Mexicano
+                If cboMoneda2.SelectedIndex = 7 Then
+                    Valor = Cant * 2.523381212
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Libra Esterlina
+                If cboMoneda2.SelectedIndex = 8 Then
+                    Valor = Cant * 0.0866285726
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Dolar Canadiense
+                If cboMoneda2.SelectedIndex = 9 Then
+                    Valor = Cant * 0.150063448
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
+                'Yuan
+                If cboMoneda2.SelectedIndex = 10 Then
+                    Valor = Cant * 0.7856921676
+                    txtResultadoMoneda.Text = Math.Round(Valor, 2)
+                End If
         End Select
     End Sub
 End Class
