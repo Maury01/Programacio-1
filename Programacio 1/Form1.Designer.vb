@@ -124,7 +124,7 @@ Partial Class Form1
         'cboVolumen2
         '
         Me.cboVolumen2.FormattingEnabled = True
-        Me.cboVolumen2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboVolumen2.Items.AddRange(New Object() {"", "Cucharadita", "Cucharada", "Pulgada Cubica", "Taza", "Onza Liquida", "Mililitro", "Litro", "Pie Cubico", "Galon", "Metro Cubico", ""})
         Me.cboVolumen2.Location = New System.Drawing.Point(228, 173)
         Me.cboVolumen2.Name = "cboVolumen2"
         Me.cboVolumen2.Size = New System.Drawing.Size(100, 21)
@@ -148,7 +148,7 @@ Partial Class Form1
         'cboVolumen1
         '
         Me.cboVolumen1.FormattingEnabled = True
-        Me.cboVolumen1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboVolumen1.Items.AddRange(New Object() {"", "Cucharadita", "Cucharada", "Pulgada Cubica", "Taza", "Onza Liquida", "Mililitro", "Litro", "Pie Cubico", "Galon", "Metro Cubico", ""})
         Me.cboVolumen1.Location = New System.Drawing.Point(29, 173)
         Me.cboVolumen1.Name = "cboVolumen1"
         Me.cboVolumen1.Size = New System.Drawing.Size(100, 21)
@@ -176,7 +176,7 @@ Partial Class Form1
         'cboAlmacenamiento2
         '
         Me.cboAlmacenamiento2.FormattingEnabled = True
-        Me.cboAlmacenamiento2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboAlmacenamiento2.Items.AddRange(New Object() {"", "Bit", "Byte", "Kilobyte", "Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Exabyte", "Zettabyte", "YottaByte"})
         Me.cboAlmacenamiento2.Location = New System.Drawing.Point(231, 278)
         Me.cboAlmacenamiento2.Name = "cboAlmacenamiento2"
         Me.cboAlmacenamiento2.Size = New System.Drawing.Size(100, 21)
@@ -200,7 +200,7 @@ Partial Class Form1
         'cboAlmacenamiento1
         '
         Me.cboAlmacenamiento1.FormattingEnabled = True
-        Me.cboAlmacenamiento1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboAlmacenamiento1.Items.AddRange(New Object() {"", "Bit", "Byte", "Kilobyte", "Megabyte", "Gigabyte", "Terabyte", "Petabyte", "Exabyte", "Zettabyte", "YottaByte"})
         Me.cboAlmacenamiento1.Location = New System.Drawing.Point(32, 278)
         Me.cboAlmacenamiento1.Name = "cboAlmacenamiento1"
         Me.cboAlmacenamiento1.Size = New System.Drawing.Size(100, 21)
