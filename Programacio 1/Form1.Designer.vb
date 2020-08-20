@@ -25,7 +25,7 @@ Partial Class Form1
         Me.lblMoneda = New System.Windows.Forms.Label()
         Me.cboMoneda1 = New System.Windows.Forms.ComboBox()
         Me.txtCantMoneda = New System.Windows.Forms.TextBox()
-        Me.textResultadoMoneda = New System.Windows.Forms.TextBox()
+        Me.txtResultadoMoneda = New System.Windows.Forms.TextBox()
         Me.cboMoneda2 = New System.Windows.Forms.ComboBox()
         Me.btnConvertirMoneda = New System.Windows.Forms.Button()
         Me.btnConvertirVolumen = New System.Windows.Forms.Button()
@@ -58,8 +58,6 @@ Partial Class Form1
         Me.txtCantTiempo = New System.Windows.Forms.TextBox()
         Me.cboTiempo1 = New System.Windows.Forms.ComboBox()
         Me.lblTiempo = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblMoneda
@@ -90,12 +88,13 @@ Partial Class Form1
         Me.txtCantMoneda.Size = New System.Drawing.Size(100, 20)
         Me.txtCantMoneda.TabIndex = 2
         '
-        'textResultadoMoneda
+        'txtResultadoMoneda
         '
-        Me.textResultadoMoneda.Location = New System.Drawing.Point(228, 42)
-        Me.textResultadoMoneda.Name = "textResultadoMoneda"
-        Me.textResultadoMoneda.Size = New System.Drawing.Size(100, 20)
-        Me.textResultadoMoneda.TabIndex = 3
+        Me.txtResultadoMoneda.Enabled = False
+        Me.txtResultadoMoneda.Location = New System.Drawing.Point(228, 42)
+        Me.txtResultadoMoneda.Name = "txtResultadoMoneda"
+        Me.txtResultadoMoneda.Size = New System.Drawing.Size(100, 20)
+        Me.txtResultadoMoneda.TabIndex = 3
         '
         'cboMoneda2
         '
@@ -137,6 +136,7 @@ Partial Class Form1
         '
         'txtResultadoVolumen
         '
+        Me.txtResultadoVolumen.Enabled = False
         Me.txtResultadoVolumen.Location = New System.Drawing.Point(228, 147)
         Me.txtResultadoVolumen.Name = "txtResultadoVolumen"
         Me.txtResultadoVolumen.Size = New System.Drawing.Size(100, 20)
@@ -190,6 +190,7 @@ Partial Class Form1
         '
         'txtResultadoAlmacenamiento
         '
+        Me.txtResultadoAlmacenamiento.Enabled = False
         Me.txtResultadoAlmacenamiento.Location = New System.Drawing.Point(231, 252)
         Me.txtResultadoAlmacenamiento.Name = "txtResultadoAlmacenamiento"
         Me.txtResultadoAlmacenamiento.Size = New System.Drawing.Size(100, 20)
@@ -243,6 +244,7 @@ Partial Class Form1
         '
         'txtResultadoMasa
         '
+        Me.txtResultadoMasa.Enabled = False
         Me.txtResultadoMasa.Location = New System.Drawing.Point(562, 42)
         Me.txtResultadoMasa.Name = "txtResultadoMasa"
         Me.txtResultadoMasa.Size = New System.Drawing.Size(100, 20)
@@ -296,6 +298,7 @@ Partial Class Form1
         '
         'txtResultadoLongitud
         '
+        Me.txtResultadoLongitud.Enabled = False
         Me.txtResultadoLongitud.Location = New System.Drawing.Point(562, 147)
         Me.txtResultadoLongitud.Name = "txtResultadoLongitud"
         Me.txtResultadoLongitud.Size = New System.Drawing.Size(100, 20)
@@ -349,6 +352,7 @@ Partial Class Form1
         '
         'txtResultadoTiempo
         '
+        Me.txtResultadoTiempo.Enabled = False
         Me.txtResultadoTiempo.Location = New System.Drawing.Point(562, 252)
         Me.txtResultadoTiempo.Name = "txtResultadoTiempo"
         Me.txtResultadoTiempo.Size = New System.Drawing.Size(100, 20)
@@ -381,31 +385,11 @@ Partial Class Form1
         Me.lblTiempo.TabIndex = 30
         Me.lblTiempo.Text = "Tiempo"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 36
-        Me.Label1.Text = "Label1"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(231, 335)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "dsf"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(682, 416)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(682, 346)
         Me.Controls.Add(Me.btnConvertirTiempo)
         Me.Controls.Add(Me.cboTiempo2)
         Me.Controls.Add(Me.txtResultadoTiempo)
@@ -438,7 +422,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblVolumen)
         Me.Controls.Add(Me.btnConvertirMoneda)
         Me.Controls.Add(Me.cboMoneda2)
-        Me.Controls.Add(Me.textResultadoMoneda)
+        Me.Controls.Add(Me.txtResultadoMoneda)
         Me.Controls.Add(Me.txtCantMoneda)
         Me.Controls.Add(Me.cboMoneda1)
         Me.Controls.Add(Me.lblMoneda)
@@ -454,7 +438,7 @@ Partial Class Form1
     Friend WithEvents lblMoneda As Label
     Friend WithEvents cboMoneda1 As ComboBox
     Friend WithEvents txtCantMoneda As TextBox
-    Friend WithEvents textResultadoMoneda As TextBox
+    Friend WithEvents txtResultadoMoneda As TextBox
     Friend WithEvents cboMoneda2 As ComboBox
     Friend WithEvents btnConvertirMoneda As Button
     Friend WithEvents btnConvertirVolumen As Button
@@ -487,6 +471,4 @@ Partial Class Form1
     Friend WithEvents txtCantTiempo As TextBox
     Friend WithEvents cboTiempo1 As ComboBox
     Friend WithEvents lblTiempo As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
 End Class
