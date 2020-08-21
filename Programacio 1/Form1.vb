@@ -962,4 +962,8 @@
                 'li
         End Select
     End Sub
+
+    Private Sub btnConvertirAlmacenamiento_Click(sender As Object, e As EventArgs) Handles btnConvertirAlmacenamiento.Click
+
+    End Sub
 End Class
