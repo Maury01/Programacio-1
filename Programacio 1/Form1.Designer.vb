@@ -235,7 +235,7 @@ Partial Class Form1
         '
         Me.cboMasa2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa2.FormattingEnabled = True
-        Me.cboMasa2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboMasa2.Items.AddRange(New Object() {"", "Onza", "Libra", "Kilogramo", "Hectogramo", "Decagramo", "Gramo", "Decigramo", "Centigramo", "Miligramo", "Tonelada"})
         Me.cboMasa2.Location = New System.Drawing.Point(562, 68)
         Me.cboMasa2.Name = "cboMasa2"
         Me.cboMasa2.Size = New System.Drawing.Size(100, 21)
@@ -260,7 +260,7 @@ Partial Class Form1
         '
         Me.cboMasa1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa1.FormattingEnabled = True
-        Me.cboMasa1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboMasa1.Items.AddRange(New Object() {"", "Onza", "Libra", "Kilogramo", "Hectogramo", "Decagramo", "Gramo", "Decigramo", "Centigramo", "Miligramo", "Tonelada"})
         Me.cboMasa1.Location = New System.Drawing.Point(363, 68)
         Me.cboMasa1.Name = "cboMasa1"
         Me.cboMasa1.Size = New System.Drawing.Size(100, 21)
@@ -289,7 +289,7 @@ Partial Class Form1
         '
         Me.cboLongitud2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboLongitud2.FormattingEnabled = True
-        Me.cboLongitud2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboLongitud2.Items.AddRange(New Object() {"", "Milla nautica", "Milla", "Kilometro", "Metro", "Yarda", "Pie", "Pulgada", "Centimetro", "Milimetro", "Micrometro"})
         Me.cboLongitud2.Location = New System.Drawing.Point(562, 173)
         Me.cboLongitud2.Name = "cboLongitud2"
         Me.cboLongitud2.Size = New System.Drawing.Size(100, 21)
@@ -314,7 +314,7 @@ Partial Class Form1
         '
         Me.cboLongitud1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboLongitud1.FormattingEnabled = True
-        Me.cboLongitud1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboLongitud1.Items.AddRange(New Object() {"", "Milla nautica", "Milla", "Kilometro", "Metro", "Yarda", "Pie", "Pulgada", "Centimetro", "Milimetro", "Micrometro", "", "", ""})
         Me.cboLongitud1.Location = New System.Drawing.Point(363, 173)
         Me.cboLongitud1.Name = "cboLongitud1"
         Me.cboLongitud1.Size = New System.Drawing.Size(100, 21)
@@ -343,7 +343,7 @@ Partial Class Form1
         '
         Me.cboTiempo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTiempo2.FormattingEnabled = True
-        Me.cboTiempo2.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboTiempo2.Items.AddRange(New Object() {"", "Decada", "Año natural", "Mes", "Semana", "Dia", "Hora", "Minuto", "Segundo", "Milisegundos", "Microsegundo"})
         Me.cboTiempo2.Location = New System.Drawing.Point(562, 278)
         Me.cboTiempo2.Name = "cboTiempo2"
         Me.cboTiempo2.Size = New System.Drawing.Size(100, 21)
@@ -368,7 +368,7 @@ Partial Class Form1
         '
         Me.cboTiempo1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTiempo1.FormattingEnabled = True
-        Me.cboTiempo1.Items.AddRange(New Object() {"", "Dolar Estadounidense", "Euro", "Yen", "Colon de El Salvador", "Bitcoin", "Soles", "Peso Mexicano", "Libra Esterlina", "Dolar Canadiense", "Yuan"})
+        Me.cboTiempo1.Items.AddRange(New Object() {"", "Decada", "Año natural", "Mes", "Semana", "Dia", "Hora", "Minuto", "Segundo", "Milisegundos", "Microsegundo"})
         Me.cboTiempo1.Location = New System.Drawing.Point(363, 278)
         Me.cboTiempo1.Name = "cboTiempo1"
         Me.cboTiempo1.Size = New System.Drawing.Size(100, 21)

@@ -556,7 +556,7 @@
                 End If
         End Select
     End Sub
-
+    'Medida de masa
     Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
         Dim Cant = txtCantMasa.Text, Valor
         Select Case cboMasa1.SelectedIndex
@@ -565,7 +565,60 @@
 
             Case 2
                 'kilogramos
-                'li
+                'libra
         End Select
     End Sub
+    'Medida de tiempo
+    Private Sub btnConvertirTiempo_Click(sender As Object, e As EventArgs) Handles btnConvertirTiempo.Click
+        Dim Cant = txtCantTiempo.Text, Valor
+        Select Case cboTiempo1.SelectedIndex
+            Case 1 'Década a
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 10
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 120
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 521.429
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 3650.0030003
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 87600.0720072
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Minuto
+                    Valor = Cant * 5256004.320432
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Segundo
+                    Valor = Cant * 315360259.22591996
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Milisegundos
+                    Valor = Cant * 315360259225.92
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Microsegundo
+                    Valor = Cant * 315360259225920
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+            Case 2 'decada
+                If cboTiempo2.SelectedIndex = 1 Then 'Microsegundo
+                    Valor = Cant * 0.10000008219999998
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+        End Select
+    End Sub
+
 End Class
