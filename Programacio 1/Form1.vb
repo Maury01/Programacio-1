@@ -562,6 +562,10 @@
         Select Case cboMasa1.SelectedIndex
             Case 1 'libra
                 Valor = Cant * 453.59 'gramos
+
+            Case 2
+                'kilogramos
+                'li
         End Select
     End Sub
 End Class
