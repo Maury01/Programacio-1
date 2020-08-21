@@ -124,7 +124,7 @@ Partial Class Form1
         'cboVolumen2
         '
         Me.cboVolumen2.FormattingEnabled = True
-        Me.cboVolumen2.Items.AddRange(New Object() {"", "Cucharadita", "Cucharada", "Pulgada Cubica", "Taza", "Onza Liquida", "Mililitro", "Litro", "Pie Cubico", "Galon", "Metro Cubico", ""})
+        Me.cboVolumen2.Items.AddRange(New Object() {"", "Cucharadita EEUU", "Cucharada eeuu", "Pulgada Cubica", "Taza EEUU", "Onza Liquida EEUU", "Mililitro", "Litro", "Pie Cubico", "Galon EEUU", "Metro Cubico"})
         Me.cboVolumen2.Location = New System.Drawing.Point(228, 173)
         Me.cboVolumen2.Name = "cboVolumen2"
         Me.cboVolumen2.Size = New System.Drawing.Size(100, 21)
@@ -148,7 +148,7 @@ Partial Class Form1
         'cboVolumen1
         '
         Me.cboVolumen1.FormattingEnabled = True
-        Me.cboVolumen1.Items.AddRange(New Object() {"", "Cucharadita", "Cucharada", "Pulgada Cubica", "Taza", "Onza Liquida", "Mililitro", "Litro", "Pie Cubico", "Galon", "Metro Cubico", ""})
+        Me.cboVolumen1.Items.AddRange(New Object() {"", "Cucharadita EEUU", "Cucharada eeuu", "Pulgada Cubica", "Taza EEUU", "Onza Liquida EEUU", "Mililitro", "Litro", "Pie Cubico", "Galon EEUU", "Metro Cubico"})
         Me.cboVolumen1.Location = New System.Drawing.Point(29, 173)
         Me.cboVolumen1.Name = "cboVolumen1"
         Me.cboVolumen1.Size = New System.Drawing.Size(100, 21)
