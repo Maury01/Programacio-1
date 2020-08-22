@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+
+
     Private Sub btnConvertirMoneda_Click(sender As Object, e As EventArgs) Handles btnConvertirMoneda.Click
         Dim Cant = txtCantMoneda.Text, Valor As Double
 
@@ -953,6 +955,7 @@
 
     Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
         Dim Cant = txtCantMasa.Text, Valor
+
         Select Case cboMasa1.SelectedIndex
             Case 1 'libra
                 Valor = Cant * 453.59 'gramos
@@ -964,6 +967,472 @@
     End Sub
 
     Private Sub btnConvertirAlmacenamiento_Click(sender As Object, e As EventArgs) Handles btnConvertirAlmacenamiento.Click
+        Dim Cant, Valor As Long
+        Cant = txtCantAlmacenamiento.Text
+        Select Case cboAlmacenamiento1.SelectedIndex
+            Case 1 'Bit a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 0.125
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 0.0001220703125
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 0.00000011920928955
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 0.00000000011641532183
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 0.00000000000011368683772
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.00000000000000011102230246
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 1.0842021725E-19
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 1.25E-22
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 1.25E-25
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
 
+            Case 2 'Byte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 8
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 0.00000000000090949470177
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.0000000000000008881784197
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 8.6736173799E-19
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 1.0E-21
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 1.0E-24
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'Kilobyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 8192
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.00000000000090949470177
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 0.0000000000000008881784197
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 1.0E-18
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 1.0E-21
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Megabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 8388608
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 0.00000000000090949470177
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 0.000000000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 1.0E-18
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'Gigabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 8589934592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 0.00000000000090949470177
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 0.0000000000000008881784197
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'Terabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 8796093022200
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1099511627800
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 0.00000000000090949470177
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'Petabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Valor = Cant * 9007199254700000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1125899906800000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1099511627800
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 0.00000000093132257462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 'Exatabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Dim ExabyteABite As Decimal
+                    ExabyteABite = 8.0E+18
+                    Valor = Cant * ExabyteABite
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Valor = Cant * 1152921504600000000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Valor = Cant * 1125899906800000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1099511627800
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 0.00000095367431641
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Zetabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Dim ZetabyteABite As Decimal
+                    Try
+                        ZetabyteABite = 9.671406556917E+24
+                        Valor = Cant * ZetabyteABite
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Dim ZetabyteAByte As Decimal
+                    Try
+                        ZetabyteAByte = 1.2089258196146E+24
+                        Valor = Cant * ZetabyteAByte
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Dim ZetabyteAKilobyte As Decimal
+                    Try
+                        ZetabyteAKilobyte = 1.15292150468E+18
+                        Valor = Cant * ZetabyteAKilobyte
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Valor = Cant * 1.1258999068426E+15
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1099511627800
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 1048576
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 0.0009765625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Yottabyte a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Bit
+                    Dim YottabyteABite As Decimal
+                    Try
+                        YottabyteABite = 9.671406556917E+24
+                        Valor = Cant * YottabyteABite
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Byte
+                    Dim YottabyteAByte As Decimal
+                    Try
+                        YottabyteAByte = 1.2089258196146E+24
+                        Valor = Cant * YottabyteAByte
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilobyte
+                    Dim YottabyteAKilobyte As Decimal
+                    Try
+                        YottabyteAKilobyte = 1.1805916207174E+21
+                        Valor = Cant * YottabyteAKilobyte
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Megabyte
+                    Dim YottabyteAMegabyte As Decimal
+                    Try
+                        YottabyteAMegabyte = 1.1529215046068E+18
+                        Valor = Cant * YottabyteAMegabyte
+                        txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                    Catch ex As Exception
+                        txtResultadoAlmacenamiento.Text = ("Desbordamiento")
+                    End Try
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Gigabyte
+                    Valor = Cant * 1.1258999068426E+15
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Terabyte
+                    Valor = Cant * 1099511627800
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Petabyte
+                    Valor = Cant * 1073741824
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Exabyte
+                    Valor = Cant * 104857
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Zettabyte
+                    Valor = Cant * 1024
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Yottabyte
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+        End Select
     End Sub
 End Class
