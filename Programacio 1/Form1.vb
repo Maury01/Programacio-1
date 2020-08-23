@@ -1413,14 +1413,50 @@
 
     'Medida de masa
     Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
-        Dim Cant = txtCantMasa.Text, Valor As Double
-        Select Case cboLongitud1.SelectedIndex
-            Case 1 '
+        Dim Cant = txtCantAlmacenamiento.Text, Valor As Double
+        Select Case cboAlmacenamiento1.SelectedIndex
+            Case 1 'masa
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Onza
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Libra 
+                    Valor = Cant * 0.0625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilogramo
+                    Valor = Cant * 0.0283495
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Hectogramo
+                    Valor = Cant * 1852
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Decagramo
+                    Valor = Cant * 2025.37
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Gramo
+                    Valor = Cant * 6076.12
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Decigramo
+                    Valor = Cant * 72913.4
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Centigramo  
+                    Valor = Cant * 185200
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1852000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Tonelada
+                    Valor = Cant * 1852000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
 
-
-            Case 2
-                'kilogramos
-                'libra
         End Select
     End Sub
 End Class
