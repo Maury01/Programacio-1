@@ -1415,45 +1415,423 @@
     Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
         Dim Cant = txtCantAlmacenamiento.Text, Valor As Double
         Select Case cboAlmacenamiento1.SelectedIndex
-            Case 1 'masa
-                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Onza
+            Case 1 'tonelada a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
                     Valor = Cant * 1
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Libra 
-                    Valor = Cant * 0.0625
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.984207
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Kilogramo
-                    Valor = Cant * 0.0283495
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1.10231
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Hectogramo
-                    Valor = Cant * 1852
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 157.473
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Decagramo
-                    Valor = Cant * 2025.37
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35274
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Gramo
-                    Valor = Cant * 6076.12
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1000
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Decigramo
-                    Valor = Cant * 72913.4
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2204.62
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Centigramo  
-                    Valor = Cant * 185200
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1000000.0
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
                 If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
-                    Valor = Cant * 1852000.0
+                    Valor = Cant * 1000000000.0
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
-                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Tonelada
-                    Valor = Cant * 1852000000.0
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 2 'tonelada larga a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 1.01605
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1.12
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 160
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35840
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1016.05
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2240
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1016000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1016000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1016000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'tonelada corta a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.907185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.892857
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 142.857
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 32000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 907.185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 907185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 907200000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 907200000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'stone a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.00635029
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.007
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 224
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 6.35029
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 14
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 6350.29
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 6350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 6350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'onza a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.00002835
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000027902
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.00003125
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00446429
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.0283495
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 28.3495
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 28349.5
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 28350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'kilogramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000984207
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.00110231
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.157473
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35.274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2.20462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'libra a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000446429
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0005
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.0714286
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 16
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 453.592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 453600000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 'gramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.000157473
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.00220462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Miligramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00000015747
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.000035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0000022046
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Microgramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000000000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000000000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00000000015747
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.000000035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0000000022046
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
 

@@ -235,7 +235,7 @@ Partial Class Form1
         '
         Me.cboMasa2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa2.FormattingEnabled = True
-        Me.cboMasa2.Items.AddRange(New Object() {"", "Onza", "Libra", "Kilogramo", "Hectogramo", "Decagramo", "Gramo", "Decigramo", "Centigramo", "Miligramo", "Tonelada"})
+        Me.cboMasa2.Items.AddRange(New Object() {"", "Tonelada", "Tonelada larga", "Tonelada corta", "Stone", "Onza", "Kilograma", "Libra", "Gramo", "Miligramo", "Microgramo"})
         Me.cboMasa2.Location = New System.Drawing.Point(562, 68)
         Me.cboMasa2.Name = "cboMasa2"
         Me.cboMasa2.Size = New System.Drawing.Size(100, 21)
@@ -260,7 +260,7 @@ Partial Class Form1
         '
         Me.cboMasa1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMasa1.FormattingEnabled = True
-        Me.cboMasa1.Items.AddRange(New Object() {"", "Onza", "Libra", "Kilogramo", "Hectogramo", "Decagramo", "Gramo", "Decigramo", "Centigramo", "Miligramo", "Tonelada"})
+        Me.cboMasa1.Items.AddRange(New Object() {"", "Tonelada", "Tonelada larga", "Tonelada corta", "Stone", "Onza", "Kilograma", "Libra", "Gramo", "Miligramo", "Microgramo"})
         Me.cboMasa1.Location = New System.Drawing.Point(363, 68)
         Me.cboMasa1.Name = "cboMasa1"
         Me.cboMasa1.Size = New System.Drawing.Size(100, 21)
