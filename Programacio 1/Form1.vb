@@ -556,21 +556,10 @@
                 End If
         End Select
     End Sub
-    'Medida de masa
-    Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
-        Dim Cant = txtCantMasa.Text, Valor
-        Select Case cboMasa1.SelectedIndex
-            Case 1 'libra
-                Valor = Cant * 453.59 'gramos
 
-            Case 2
-                'kilogramos
-                'libra
-        End Select
-    End Sub
     'Medida de tiempo
     Private Sub btnConvertirTiempo_Click(sender As Object, e As EventArgs) Handles btnConvertirTiempo.Click
-        Dim Cant = txtCantTiempo.Text, Valor
+        Dim Cant = txtCantTiempo.Text, Valor As Double
         Select Case cboTiempo1.SelectedIndex
             Case 1 'Década a
                 If cboTiempo2.SelectedIndex = 1 Then 'decada
@@ -995,4 +984,443 @@
         End Select
     End Sub
 
+    'Medida de longitud
+    Private Sub btmConvertirLongitud_Click(sender As Object, e As EventArgs) Handles btmConvertirLongitud.Click
+        Dim Cant = txtCantLongitud.Text, Valor As Double
+        Select Case cboLongitud1.SelectedIndex
+            Case 1 'Milla nautica
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 1.15078
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1.852
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1852
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 2025.37
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 6076.12
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 72913.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 185200
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1852000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1852000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 2 'Milla
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.868976
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1.60934
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1609.34
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1760
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 5280
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 63360
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 160934
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1609000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1609000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'Kilometro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.539957
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.621371
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1093.61
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3280.84
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 39370.1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 100000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Metro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000539957
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000621371
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1.09361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3.28084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 39.3701
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 100
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'Yarda
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000493737
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000568182
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0009144
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.9144
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 36
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 91.44
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 914.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 914400
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'Pie
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000164579
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000189394
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0003048
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.3048
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.333333
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 12
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 30.48
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 304.8
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 304800
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'Pulgada
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000013715
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000015783
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0000254
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.0254
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0277778
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0833333
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 2.54
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 25.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 25400
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 '8.	Centimetro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.0000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.0000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.00001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.01
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0109361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0328084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.3937008
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 10
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 10000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Milimetro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.00000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.00000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.00109361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.00328084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.0393701
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 0.1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Micrometro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.00000000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.00000000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.000000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0000010936
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0000032808
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.00003937
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 0.0001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+        End Select
+    End Sub
+
+    'Medida de masa
+    Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
+        Dim Cant = txtCantMasa.Text, Valor As Double
+        Select Case cboLongitud1.SelectedIndex
+            Case 1 '
+
+
+            Case 2
+                'kilogramos
+                'libra
+        End Select
+    End Sub
 End Class
