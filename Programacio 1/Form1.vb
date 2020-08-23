@@ -581,7 +581,7 @@
                     Valor = Cant * 10
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                If cboTiempo2.SelectedIndex = 3 Then 'MesS
                     Valor = Cant * 120
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
@@ -597,27 +597,401 @@
                     Valor = Cant * 87600.0720072
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-                If cboTiempo2.SelectedIndex = 6 Then 'Minuto
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
                     Valor = Cant * 5256004.320432
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-                If cboTiempo2.SelectedIndex = 6 Then 'Segundo
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
                     Valor = Cant * 315360259.22591996
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-                If cboTiempo2.SelectedIndex = 6 Then 'Milisegundos
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
                     Valor = Cant * 315360259225.92
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-                If cboTiempo2.SelectedIndex = 6 Then 'Microsegundo
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
                     Valor = Cant * 315360259225920
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
-            Case 2 'decada
-                If cboTiempo2.SelectedIndex = 1 Then 'Microsegundo
-                    Valor = Cant * 0.10000008219999998
+
+            Case 2 'Año natural
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.1
                     txtResultadoTiempo.Text = Math.Round(Valor, 2)
                 End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 12
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 52.1429
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 365
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 8760
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 525600
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 31540000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 31540000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 31540000000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'Mes
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00833334
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.0833334
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 4.34524
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 30.4167
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 730.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 43800
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 2628000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 2628000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 2628000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Semana
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00191781
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.019178099999991784
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.230137
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 7
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 168
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 10080
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 604800
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 604800000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 604800000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'dia
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000273973
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00273973
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.0328767
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.142857
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 24
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 1440
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 86400
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 86400000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 86400000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'hora
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000011416
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.000114155
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00136986
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.00595238
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.0416667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 60
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 3600
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 3600000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 3600000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'minuto
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00000019026
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.0000019026
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.000022831
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.000099206
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000694444
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.0166667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 60
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 60000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 60000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 'segundo
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.000277778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.0166667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 1000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Milisegundos
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.00000027778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.000016667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 0.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Microsegundo
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000000000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000000000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000000000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.00000000027778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.000000016667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 0.000001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 0.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
         End Select
     End Sub
 
