@@ -56,20 +56,4 @@
                 lblRespuesta.Text = Num1 * (Num2 / 100)
         End Select
     End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbpOperaciones.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btnCalcular_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
 End Class
