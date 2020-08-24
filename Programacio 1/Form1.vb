@@ -558,7 +558,7 @@
     End Sub
 
     'Medida de tiempo 
-    'Autor carlos
+    'Autor carlos martinez
     Private Sub btnConvertirTiempo_Click(sender As Object, e As EventArgs) Handles btnConvertirTiempo.Click
         Dim Cant = txtCantTiempo.Text, Valor As Double
         Select Case cboTiempo1.SelectedIndex
