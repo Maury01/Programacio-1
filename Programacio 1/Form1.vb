@@ -953,16 +953,430 @@
         End Select
     End Sub
 
+    'Medida de masa
     Private Sub btnConvertirMasa_Click(sender As Object, e As EventArgs) Handles btnConvertirMasa.Click
-        Dim Cant = txtCantMasa.Text, Valor
+        Dim Cant = txtCantAlmacenamiento.Text, Valor As Double
+        Select Case cboAlmacenamiento1.SelectedIndex
+            Case 1 'tonelada a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.984207
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1.10231
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 157.473
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2204.62
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
 
-        Select Case cboMasa1.SelectedIndex
-            Case 1 'libra
-                Valor = Cant * 453.59 'gramos
+            Case 2 'tonelada larga a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 1.01605
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1.12
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 160
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35840
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1016.05
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2240
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1016000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1016000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1016000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
 
-            Case 2
-                'kilogramos
-                'li
+            Case 3 'tonelada corta a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.907185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.892857
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 142.857
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 32000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 907.185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 907185
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 907200000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 907200000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'stone a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.00635029
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.007
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 224
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 6.35029
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 14
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 6350.29
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 6350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 6350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'onza a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.00002835
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000027902
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.00003125
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00446429
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.0283495
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0625
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 28.3495
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 28349.5
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 28350000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'kilogramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000984207
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.00110231
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.157473
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 35.274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 2.20462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'libra a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.000446429
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0005
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.0714286
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 16
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 453.592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 453592
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 453600000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 'gramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.000157473
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.00220462
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1000
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Miligramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00000015747
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.000035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0000022046
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1000000.0
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Microgramo a
+                If cboAlmacenamiento2.SelectedIndex = 1 Then 'Tonelada
+                    Valor = Cant * 0.000000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 2 Then 'Tonelada larga 
+                    Valor = Cant * 0.00000000000098421
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 3 Then 'Tonelada corta
+                    Valor = Cant * 0.0000000000011023
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 4 Then 'Stone
+                    Valor = Cant * 0.00000000015747
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 5 Then 'Onza
+                    Valor = Cant * 0.000000035274
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 6 Then 'Kilograma
+                    Valor = Cant * 0.000000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 7 Then 'Libra
+                    Valor = Cant * 0.0000000022046
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 8 Then 'Gramo  
+                    Valor = Cant * 0.000001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 9 Then 'Miligramo
+                    Valor = Cant * 0.001
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+                If cboAlmacenamiento2.SelectedIndex = 10 Then 'Microgramo
+                    Valor = Cant * 1
+                    txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
+                End If
+
         End Select
     End Sub
 
@@ -1433,6 +1847,859 @@
                     Valor = Cant * 1
                     txtResultadoAlmacenamiento.Text = Math.Round(Valor, 2)
                 End If
+        End Select
+    End Sub
+
+    Private Sub btnConvertirTiempo_Click(sender As Object, e As EventArgs) Handles btnConvertirTiempo.Click
+        Dim Cant = txtCantTiempo.Text, Valor
+        Select Case cboTiempo1.SelectedIndex
+            Case 1 'Década a
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 10
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'MesS
+                    Valor = Cant * 120
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 521.429
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 3650.0030003
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 87600.0720072
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 5256004.320432
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 315360259.22591996
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 315360259225.92
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 315360259225920
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 2 'Año natural
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 12
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 52.1429
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 365
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 8760
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 525600
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 31540000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 31540000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 31540000000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'Mes
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00833334
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.0833334
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 4.34524
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 30.4167
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 730.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 43800
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 2628000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 2628000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 2628000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Semana
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00191781
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.019178099999991784
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.230137
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 7
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 168
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 10080
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 604800
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 604800000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 604800000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'dia
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000273973
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00273973
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.0328767
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.142857
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 24
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 1440
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 86400
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 86400000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 86400000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'hora
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000011416
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.000114155
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00136986
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.00595238
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.0416667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 60
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 3600
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 3600000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 3600000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'minuto
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.00000019026
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.0000019026
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.000022831
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.000099206
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000694444
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.0166667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 60
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 60000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 60000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 'segundo
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.000277778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.0166667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 1000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1000000.0
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Milisegundos
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.00000027778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.000016667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 0.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1000
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Microsegundo
+                If cboTiempo2.SelectedIndex = 1 Then 'decada
+                    Valor = Cant * 0.000000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 2 Then 'Año natural
+                    Valor = Cant * 0.00000000000003171
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 3 Then 'Mes
+                    Valor = Cant * 0.00000000000038052
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 4 Then 'Semana
+                    Valor = Cant * 0.0000000000016534
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 5 Then 'Dia
+                    Valor = Cant * 0.000000000011574
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 6 Then 'Hora
+                    Valor = Cant * 0.00000000027778
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 7 Then 'Minuto
+                    Valor = Cant * 0.000000016667
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 8 Then 'Segundo
+                    Valor = Cant * 0.000001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 9 Then 'Milisegundos
+                    Valor = Cant * 0.001
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+                If cboTiempo2.SelectedIndex = 10 Then 'Microsegundo
+                    Valor = Cant * 1
+                    txtResultadoTiempo.Text = Math.Round(Valor, 2)
+                End If
+
+        End Select
+    End Sub
+
+    'Medida de longitud
+    Private Sub btmConvertirLongitud_Click(sender As Object, e As EventArgs) Handles btmConvertirLongitud.Click
+        Dim Cant = txtCantLongitud.Text, Valor As Double
+        Select Case cboLongitud1.SelectedIndex
+            Case 1 'Milla nautica
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 1.15078
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1.852
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1852
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 2025.37
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 6076.12
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 72913.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 185200
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1852000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1852000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 2 'Milla
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.868976
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1.60934
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1609.34
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1760
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 5280
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 63360
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 160934
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1609000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1609000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 3 'Kilometro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.539957
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.621371
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1093.61
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3280.84
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 39370.1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 100000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 4 'Metro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000539957
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000621371
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1.09361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3.28084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 39.3701
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 100
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000000.0
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 5 'Yarda
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000493737
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000568182
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0009144
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.9144
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 3
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 36
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 91.44
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 914.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 914400
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 6 'Pie
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000164579
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000189394
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0003048
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.3048
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.333333
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 12
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 30.48
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 304.8
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 304800
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 7 'Pulgada
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.000013715
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.000015783
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.0000254
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.0254
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0277778
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0833333
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 2.54
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 25.4
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 25400
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 8 '8.	Centimetro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.0000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.0000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.00001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.01
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0109361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0328084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.3937008
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 10
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 10000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 9 'Milimetro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.00000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.00000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.00109361
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.00328084
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.0393701
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 0.1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1000
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
+            Case 10 'Micrometro
+                If cboLongitud2.SelectedIndex = 1 Then 'Milla nautica
+                    Valor = Cant * 0.00000000053996
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 2 Then 'Milla 
+                    Valor = Cant * 0.00000000062137
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 3 Then 'Kilometro
+                    Valor = Cant * 0.000000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 4 Then 'Metro
+                    Valor = Cant * 0.000001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 5 Then 'Yarda
+                    Valor = Cant * 0.0000010936
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 6 Then 'Pie
+                    Valor = Cant * 0.0000032808
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 7 Then 'Pulgada
+                    Valor = Cant * 0.00003937
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 8 Then 'Centimetro  
+                    Valor = Cant * 0.0001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 9 Then 'Milimetro
+                    Valor = Cant * 0.001
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+                If cboLongitud2.SelectedIndex = 10 Then 'Micrometro
+                    Valor = Cant * 1
+                    txtResultadoLongitud.Text = Math.Round(Valor, 2)
+                End If
+
         End Select
     End Sub
 End Class
