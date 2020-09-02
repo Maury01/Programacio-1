@@ -22,89 +22,42 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblCapital = New System.Windows.Forms.Label()
-        Me.lblInteres = New System.Windows.Forms.Label()
-        Me.lblTiempo = New System.Windows.Forms.Label()
-        Me.txtCapital = New System.Windows.Forms.TextBox()
-        Me.txtInteres = New System.Windows.Forms.TextBox()
-        Me.txtTiempo = New System.Windows.Forms.TextBox()
-        Me.lblInteresSimple = New System.Windows.Forms.Label()
-        Me.lblInteresCompuesto = New System.Windows.Forms.Label()
+        Me.lblNumero = New System.Windows.Forms.Label()
+        Me.txtNumero = New System.Windows.Forms.TextBox()
+        Me.lblRespuesta = New System.Windows.Forms.Label()
         Me.btnCalcular = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lblCapital
+        'lblNumero
         '
-        Me.lblCapital.AutoSize = True
-        Me.lblCapital.Location = New System.Drawing.Point(45, 75)
-        Me.lblCapital.Name = "lblCapital"
-        Me.lblCapital.Size = New System.Drawing.Size(42, 13)
-        Me.lblCapital.TabIndex = 0
-        Me.lblCapital.Text = "Capital:"
+        Me.lblNumero.AutoSize = True
+        Me.lblNumero.Location = New System.Drawing.Point(70, 35)
+        Me.lblNumero.Name = "lblNumero"
+        Me.lblNumero.Size = New System.Drawing.Size(47, 13)
+        Me.lblNumero.TabIndex = 0
+        Me.lblNumero.Text = "Número:"
         '
-        'lblInteres
+        'txtNumero
         '
-        Me.lblInteres.AutoSize = True
-        Me.lblInteres.Location = New System.Drawing.Point(198, 75)
-        Me.lblInteres.Name = "lblInteres"
-        Me.lblInteres.Size = New System.Drawing.Size(42, 13)
-        Me.lblInteres.TabIndex = 1
-        Me.lblInteres.Text = "Interes:"
+        Me.txtNumero.Location = New System.Drawing.Point(118, 32)
+        Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.Size = New System.Drawing.Size(83, 20)
+        Me.txtNumero.TabIndex = 3
         '
-        'lblTiempo
+        'lblRespuesta
         '
-        Me.lblTiempo.AutoSize = True
-        Me.lblTiempo.Location = New System.Drawing.Point(316, 75)
-        Me.lblTiempo.Name = "lblTiempo"
-        Me.lblTiempo.Size = New System.Drawing.Size(45, 13)
-        Me.lblTiempo.TabIndex = 2
-        Me.lblTiempo.Text = "Tiempo:"
-        '
-        'txtCapital
-        '
-        Me.txtCapital.Location = New System.Drawing.Point(93, 72)
-        Me.txtCapital.Name = "txtCapital"
-        Me.txtCapital.Size = New System.Drawing.Size(83, 20)
-        Me.txtCapital.TabIndex = 3
-        '
-        'txtInteres
-        '
-        Me.txtInteres.Location = New System.Drawing.Point(262, 72)
-        Me.txtInteres.Name = "txtInteres"
-        Me.txtInteres.Size = New System.Drawing.Size(48, 20)
-        Me.txtInteres.TabIndex = 4
-        '
-        'txtTiempo
-        '
-        Me.txtTiempo.Location = New System.Drawing.Point(367, 72)
-        Me.txtTiempo.Name = "txtTiempo"
-        Me.txtTiempo.Size = New System.Drawing.Size(53, 20)
-        Me.txtTiempo.TabIndex = 5
-        '
-        'lblInteresSimple
-        '
-        Me.lblInteresSimple.AutoSize = True
-        Me.lblInteresSimple.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInteresSimple.Location = New System.Drawing.Point(111, 130)
-        Me.lblInteresSimple.Name = "lblInteresSimple"
-        Me.lblInteresSimple.Size = New System.Drawing.Size(120, 16)
-        Me.lblInteresSimple.TabIndex = 6
-        Me.lblInteresSimple.Text = "Interer Simple: ?"
-        '
-        'lblInteresCompuesto
-        '
-        Me.lblInteresCompuesto.AutoSize = True
-        Me.lblInteresCompuesto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInteresCompuesto.Location = New System.Drawing.Point(90, 161)
-        Me.lblInteresCompuesto.Name = "lblInteresCompuesto"
-        Me.lblInteresCompuesto.Size = New System.Drawing.Size(141, 16)
-        Me.lblInteresCompuesto.TabIndex = 7
-        Me.lblInteresCompuesto.Text = "Interes Copuesto: ?"
+        Me.lblRespuesta.AutoSize = True
+        Me.lblRespuesta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRespuesta.Location = New System.Drawing.Point(207, 35)
+        Me.lblRespuesta.Name = "lblRespuesta"
+        Me.lblRespuesta.Size = New System.Drawing.Size(28, 16)
+        Me.lblRespuesta.TabIndex = 6
+        Me.lblRespuesta.Text = "= ?"
         '
         'btnCalcular
         '
         Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalcular.Location = New System.Drawing.Point(201, 197)
+        Me.btnCalcular.Location = New System.Drawing.Point(156, 85)
         Me.btnCalcular.Name = "btnCalcular"
         Me.btnCalcular.Size = New System.Drawing.Size(86, 28)
         Me.btnCalcular.TabIndex = 8
@@ -115,16 +68,11 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(474, 244)
+        Me.ClientSize = New System.Drawing.Size(305, 138)
         Me.Controls.Add(Me.btnCalcular)
-        Me.Controls.Add(Me.lblInteresCompuesto)
-        Me.Controls.Add(Me.lblInteresSimple)
-        Me.Controls.Add(Me.txtTiempo)
-        Me.Controls.Add(Me.txtInteres)
-        Me.Controls.Add(Me.txtCapital)
-        Me.Controls.Add(Me.lblTiempo)
-        Me.Controls.Add(Me.lblInteres)
-        Me.Controls.Add(Me.lblCapital)
+        Me.Controls.Add(Me.lblRespuesta)
+        Me.Controls.Add(Me.txtNumero)
+        Me.Controls.Add(Me.lblNumero)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
@@ -134,13 +82,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblCapital As Label
-    Friend WithEvents lblInteres As Label
-    Friend WithEvents lblTiempo As Label
-    Friend WithEvents txtCapital As TextBox
-    Friend WithEvents txtInteres As TextBox
-    Friend WithEvents txtTiempo As TextBox
-    Friend WithEvents lblInteresSimple As Label
-    Friend WithEvents lblInteresCompuesto As Label
+    Friend WithEvents lblNumero As Label
+    Friend WithEvents txtNumero As TextBox
+    Friend WithEvents lblRespuesta As Label
     Friend WithEvents btnCalcular As Button
 End Class
